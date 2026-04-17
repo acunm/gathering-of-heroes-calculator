@@ -1,0 +1,14 @@
+{
+  "title": "Kommandantenliste",
+  "items": "Einträge",
+  "totalTokensNeeded": "Benötigte Gesamt-Token",
+  "totalCost": "Gesamtkosten",
+  "gathered": "Gesammelt",
+  "completion": "Fortschritt",
+  "tokens": "Token",
+  "item": {
+    "tier": "STUFE",
+    "tokens": "TOKEN"
+  },
+  "noCommandersSelected": "Keine Kommandanten ausgewählt"
+}

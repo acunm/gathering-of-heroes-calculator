@@ -11,6 +11,7 @@ import {
 } from '@/lib/calculations'
 
 import { COMMANDER_TIERS } from '@/lib/constants'
+import { DEFAULT_LANGUAGE } from '@/types/common/language'
 import { type CalculatorState } from '@/types/store/calculator-store'
 
 export const useCalculatorStore = create<CalculatorState>()(
@@ -31,6 +32,7 @@ export const useCalculatorStore = create<CalculatorState>()(
         totalGemsSpent: 0,
       },
       selectedCategory: 'Infantry',
+      language: DEFAULT_LANGUAGE,
       speedupTimeStr: '',
       speedupInputMode: 'auto',
 
@@ -54,6 +56,8 @@ export const useCalculatorStore = create<CalculatorState>()(
           speedupInputMode: 'auto',
           // We keep selectedCategory as it was
         }),
+
+      setLanguage: (language) => set({ language }),
 
       toggleCommander: (name, category, tierId) =>
         set((state) => {
@@ -158,6 +162,7 @@ export const useCalculatorStore = create<CalculatorState>()(
         selectedCommanders: state.selectedCommanders,
         missions: state.missions,
         selectedCategory: state.selectedCategory,
+        language: state.language,
         speedupTimeStr: state.speedupTimeStr,
         speedupInputMode: state.speedupInputMode,
       }),

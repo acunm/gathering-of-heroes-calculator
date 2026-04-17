@@ -1,0 +1,49 @@
+{
+  "daily": {
+    "title": "Täglich",
+    "login": "Einloggen",
+    "barbs": "Barbaren besiegen (100)",
+    "gather": "2 Millionen Ressourcen sammeln",
+    "limit": "Limit: 5 Tage",
+    "assumed": "Angenommen: 5 Tage",
+    "perDay": "/ Tag",
+    "totalSuffix": "Gesamt",
+    "yield": "Täglicher Ertrag"
+  },
+  "challenge": {
+    "title": "Herausforderung",
+    "login5": "5 Tage einloggen",
+    "gems10k": "10k Edelsteine ausgeben",
+    "gems50k": "50k Edelsteine ausgeben",
+    "troop_power": "Truppenstärke erhöhen (600k)",
+    "rewards": "Meilenstein-Belohnungen",
+    "total": "Meilenstein-Gesamt"
+  },
+  "repeatable": {
+    "title": "Wiederholbar",
+    "gems2k": "2k Edelsteine ausgeben",
+    "speedups": "480 Min. Beschleuniger nutzen",
+    "yields": "Ausgaben-Ertrag",
+    "total": "Ausgaben-Ergebnis"
+  },
+  "speedupCalculator": {
+    "title": "Ausbildungsrechner",
+    "total": "Gesamtzeit",
+    "calculate": "Berechnen",
+    "useResults": "Ergebnisse unten verwenden",
+    "calculatedAddition": "Berechneter Zusatz",
+    "ratio": "2 pro 480 Min.",
+    "manualTitle": "Beschleuniger-Volumen (Min.)",
+    "totalPackaged": "Gesamt verpackt",
+    "yield": "Volumen-Ertrag",
+    "accumulatorNote": "Zum Speicher hinzugefügt ({total} Min. gesamt)",
+    "manualPlaceholder": "Bsp.: 138T 21:20:00"
+  },
+  "gemsCalculator": {
+    "title": "Insgesamt ausgegebene Edelsteine",
+    "available": "Verfügbare Edelsteine",
+    "placeholder": "Gesamte auszugebende Edelsteine...",
+    "ratio": "30 pro 2k",
+    "yield": "Volumen-Ertrag"
+  }
+}

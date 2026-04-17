@@ -1,0 +1,14 @@
+{
+  "title": "Danh sách tướng",
+  "items": "Mục",
+  "totalTokensNeeded": "Tổng token cần",
+  "totalCost": "Tổng chi phí",
+  "gathered": "Đã thu",
+  "completion": "Tiến độ",
+  "tokens": "Token",
+  "item": {
+    "tier": "BẬC",
+    "tokens": "TOKEN"
+  },
+  "noCommandersSelected": "Chưa chọn tướng"
+}

@@ -6,6 +6,24 @@ import missionsGrid from '@/translations/en/missions-grid.json'
 import tipsTricks from '@/translations/en/tips-tricks.json'
 import githubActions from '@/translations/en/github-actions.json'
 import journeyProgress from '@/translations/en/journey-progress.json'
+import commonDe from '@/translations/de/common.json'
+import headerDe from '@/translations/de/header.json'
+import commandersListDe from '@/translations/de/commanders-list.json'
+import commanderSelectionDe from '@/translations/de/commander-selection.json'
+import missionsGridDe from '@/translations/de/missions-grid.json'
+import tipsTricksDe from '@/translations/de/tips-tricks.json'
+import githubActionsDe from '@/translations/de/github-actions.json'
+import journeyProgressDe from '@/translations/de/journey-progress.json'
+import commonVi from '@/translations/vi/common.json'
+import headerVi from '@/translations/vi/header.json'
+import commandersListVi from '@/translations/vi/commanders-list.json'
+import commanderSelectionVi from '@/translations/vi/commander-selection.json'
+import missionsGridVi from '@/translations/vi/missions-grid.json'
+import tipsTricksVi from '@/translations/vi/tips-tricks.json'
+import githubActionsVi from '@/translations/vi/github-actions.json'
+import journeyProgressVi from '@/translations/vi/journey-progress.json'
+import { useCalculatorStore } from '@/store/use-calculator-store'
+import { DEFAULT_LANGUAGE, type AppLanguage } from '@/types/common/language'
 
 import type { TranslationKey, TranslationKeys, Translations } from '@/types/common/translations'
 
@@ -20,9 +38,50 @@ export const en = {
   journeyProgress,
 }
 
-export function t(path: TranslationKey, params?: Record<string, string | number>): string {
+const de: typeof en = {
+  common: commonDe,
+  header: headerDe,
+  commandersList: commandersListDe,
+  commanderSelection: commanderSelectionDe,
+  missionsGrid: missionsGridDe,
+  tipsTricks: tipsTricksDe,
+  githubActions: githubActionsDe,
+  journeyProgress: journeyProgressDe,
+}
+
+const vi: typeof en = {
+  common: commonVi,
+  header: headerVi,
+  commandersList: commandersListVi,
+  commanderSelection: commanderSelectionVi,
+  missionsGrid: missionsGridVi,
+  tipsTricks: tipsTricksVi,
+  githubActions: githubActionsVi,
+  journeyProgress: journeyProgressVi,
+}
+
+const localizedTranslations = {
+  en,
+  de,
+  vi,
+} satisfies Record<AppLanguage, typeof en>
+
+function getCurrentLanguage(): AppLanguage {
+  return useCalculatorStore.getState().language ?? DEFAULT_LANGUAGE
+}
+
+export function isSupportedLanguage(value: string): value is AppLanguage {
+  return ['en', 'de', 'vi'].includes(value)
+}
+
+export function t(
+  path: TranslationKey,
+  params?: Record<string, string | number>,
+  language: AppLanguage = getCurrentLanguage(),
+): string {
   const keys = (path as string).split('.')
-  let value: Translations | string | undefined = en
+  let value: Translations | string | undefined =
+    localizedTranslations[language] ?? localizedTranslations[DEFAULT_LANGUAGE]
 
   for (const key of keys) {
     if (value && typeof value === 'object') {

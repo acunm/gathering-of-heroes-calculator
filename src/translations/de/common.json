@@ -1,0 +1,25 @@
+{
+  "tiers": {
+    "1": "Stufe 1",
+    "2": "Stufe 2",
+    "3": "Stufe 3",
+    "4": "Stufe 4",
+    "5": "Stufe 5"
+  },
+  "categories": {
+    "Infantry": "Infanterie",
+    "Cavalry": "Kavallerie",
+    "Archer": "Bogenschützen",
+    "Leadership": "Führung",
+    "Integration": "Integration",
+    "Engineering": "Ingenieurwesen"
+  },
+  "speedupCategories": {
+    "building": "Gebäude",
+    "research": "Forschung",
+    "training": "Ausbildung",
+    "healing": "Heilung",
+    "universal": "Universal"
+  },
+  "tierUnlockRequirement": "Gib noch {amount} {tokens} für Stufe {tiers} aus"
+}

@@ -1,0 +1,49 @@
+{
+  "daily": {
+    "title": "Hàng ngày",
+    "login": "Đăng nhập",
+    "barbs": "Đánh bại man di (100)",
+    "gather": "Thu thập 2 triệu tài nguyên",
+    "limit": "Giới hạn: 5 ngày",
+    "assumed": "Mặc định: 5 ngày",
+    "perDay": "/ Ngày",
+    "totalSuffix": "Tổng",
+    "yield": "Lượng hàng ngày"
+  },
+  "challenge": {
+    "title": "Thử thách",
+    "login5": "Đăng nhập 5 ngày",
+    "gems10k": "Tiêu 10k gem",
+    "gems50k": "Tiêu 50k gem",
+    "troop_power": "Tăng sức mạnh quân đội (600k)",
+    "rewards": "Thưởng mốc",
+    "total": "Tổng mốc"
+  },
+  "repeatable": {
+    "title": "Lặp lại",
+    "gems2k": "Tiêu 2k gem",
+    "speedups": "Dùng 480p tăng tốc",
+    "yields": "Lượng nhận được",
+    "total": "Kết quả"
+  },
+  "speedupCalculator": {
+    "title": "Máy tính huấn luyện",
+    "total": "Tổng thời gian",
+    "calculate": "Tính",
+    "useResults": "Dùng kết quả bên dưới",
+    "calculatedAddition": "Phần cộng thêm",
+    "ratio": "2 mỗi 480p",
+    "manualTitle": "Lượng tăng tốc (phút)",
+    "totalPackaged": "Tổng đóng gói",
+    "yield": "Lượng nhận được",
+    "accumulatorNote": "Đã thêm vào bộ đệm ({total}p tổng)",
+    "manualPlaceholder": "VD: 138n 21:20:00"
+  },
+  "gemsCalculator": {
+    "title": "Tổng gem đã tiêu",
+    "available": "Gem hiện có",
+    "placeholder": "Tổng số gem sẽ tiêu...",
+    "ratio": "30 mỗi 2k",
+    "yield": "Lượng nhận được"
+  }
+}

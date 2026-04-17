@@ -1,5 +1,6 @@
 import { GithubActions } from '@/components/GithubActions'
 import { Disclaimer } from '@/components/header/Disclaimer'
+import { LanguageSelector } from '@/components/header/LanguageSelector'
 import { TitleSection } from '@/components/header/TitleSection'
 
 export function Header() {
@@ -10,7 +11,8 @@ export function Header() {
       <header className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
         <TitleSection />
 
-        <div className="shrink-0">
+        <div className="shrink-0 flex flex-col gap-3 items-stretch lg:items-end">
+          <LanguageSelector />
           <GithubActions />
         </div>
       </header>

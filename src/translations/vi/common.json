@@ -1,0 +1,25 @@
+{
+  "tiers": {
+    "1": "Bậc 1",
+    "2": "Bậc 2",
+    "3": "Bậc 3",
+    "4": "Bậc 4",
+    "5": "Bậc 5"
+  },
+  "categories": {
+    "Infantry": "Bộ binh",
+    "Cavalry": "Kỵ binh",
+    "Archer": "Cung thủ",
+    "Leadership": "Lãnh đạo",
+    "Integration": "Tích hợp",
+    "Engineering": "Kỹ thuật"
+  },
+  "speedupCategories": {
+    "building": "Xây dựng",
+    "research": "Nghiên cứu",
+    "training": "Huấn luyện",
+    "healing": "Hồi phục",
+    "universal": "Đa dụng"
+  },
+  "tierUnlockRequirement": "Hãy tiêu thêm {amount} {tokens} cho Bậc {tiers}"
+}

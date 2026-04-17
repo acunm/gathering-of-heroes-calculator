@@ -1,13 +1,24 @@
+import { useEffect } from 'react'
 import { Header } from './components/header'
 import { MissionsGrid } from './components/missions-grid'
 import { RequirementsInfo } from './components/requirements'
 import { CommanderSelection } from './components/commander-selection'
 import { CommandersList } from './components/commanders-list'
 import { TipsTricks } from './components/TipsTricks'
+import { useCalculatorStore } from './store/use-calculator-store'
 
 function App() {
+  const language = useCalculatorStore((state) => state.language)
+
+  useEffect(() => {
+    document.documentElement.lang = language
+  }, [language])
+
   return (
-    <div className="min-h-screen bg-[#0a0a0b] text-white p-4 md:p-8 font-sans selection:bg-yellow-500/30">
+    <div
+      data-language={language}
+      className="min-h-screen bg-[#0a0a0b] text-white p-4 md:p-8 font-sans selection:bg-yellow-500/30"
+    >
       {/* Background Decor */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-yellow-600/10 blur-[120px] rounded-full" />
